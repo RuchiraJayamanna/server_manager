@@ -1,0 +1,113 @@
+{
+ "actions": [],
+ "autoname": "SERVER-.####",
+ "creation": "2026-03-19 23:05:08.310576",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "server_name",
+  "bench_path",
+  "app_name",
+  "site_name",
+  "repo_url",
+  "branch",
+  "section_break_1",
+  "ssh_host",
+  "ssh_user",
+  "ssh_key",
+  "section_break_2",
+  "auto_restart"
+ ],
+ "fields": [
+  {
+   "fieldname": "server_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Server Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "bench_path",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Bench Path",
+   "reqd": 1
+  },
+  {
+   "fieldname": "app_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "App Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "site_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Site Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "repo_url",
+   "fieldtype": "Data",
+   "label": "Repository URL"
+  },
+  {
+   "default": "develop",
+   "fieldname": "branch",
+   "fieldtype": "Data",
+   "label": "Default Branch"
+  },
+  {
+   "fieldname": "section_break_1",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "ssh_host",
+   "fieldtype": "Data",
+   "label": "SSH Host"
+  },
+  {
+   "fieldname": "ssh_user",
+   "fieldtype": "Data",
+   "label": "SSH User"
+  },
+  {
+   "fieldname": "ssh_key",
+   "fieldtype": "Data",
+   "label": "SSH Key Path"
+  },
+  {
+   "fieldname": "section_break_2",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "1",
+   "fieldname": "auto_restart",
+   "fieldtype": "Check",
+   "label": "Auto Restart Bench"
+  }
+ ],
+ "links": [],
+ "modified": "2026-03-19 23:07:41.064429",
+ "modified_by": "Administrator",
+ "module": "Server Manager",
+ "name": "Server",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "read": 1,
+   "role": "System Manager",
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "app_name",
+ "track_changes": 1
+}
