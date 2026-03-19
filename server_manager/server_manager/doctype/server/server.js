@@ -15,7 +15,7 @@ frappe.ui.form.on('Server', {
             ], (values) => {
 
                 frappe.call({
-                    method: 'server_manager.api.deploy.deploy',
+                    method: 'server_manager.server_manager.api.deploy.deploy',
                     args: {
                         server: frm.doc.name,
                         branch: values.branch
