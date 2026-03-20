@@ -18,9 +18,9 @@ def deploy(server, branch):
         cd {server_doc.bench_path}
         cd apps/{server_doc.app_name}
 
-        git fetch origin
+        git fetch --all
         git checkout {branch}
-        git pull origin {branch}
+        git pull
 
         cd ../../
 
